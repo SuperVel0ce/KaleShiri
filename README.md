@@ -2,7 +2,7 @@ KaleShiri
 
 
 
-TOOLS used for the exploitation:
+TOOLS used for the exploitation:\n
 gf (tomnomnom) — https://github.com/tomnomnom/gf
 qsreplace(tomnomnom) — https://github.com/tomnomnom/qsreplace)
 ffuf — https://github.com/ffuf/ffuf

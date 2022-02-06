@@ -2,12 +2,14 @@ KaleShiri
 
 
 
-TOOLS used for the exploitation:\n
+TOOLS used for the exploitation:
+
 gf (tomnomnom) — https://github.com/tomnomnom/gf
 qsreplace(tomnomnom) — https://github.com/tomnomnom/qsreplace)
 ffuf — https://github.com/ffuf/ffuf
 gau(Corben) — https://github.com/lc/gau
 waybackurls(tomnomnom) — https://github.com/tomnomnom/waybackurls
+
 
 
 
@@ -70,3 +72,5 @@ subfinder -d example.com -silent | waybackurls >> vul3.txt
 cat vul1.txt vuln2.txt vul3.txt | grep “=” | sort -u | grep “?” | httpx -silent >> FUZZvul.txt
 
 ---------------------------------------------------------------------------------------
+
+shodan domain DOMAIN TO BOUNTY | awk '{print $3}' | httpx -silent | nuclei -t /home/ofjaaah/PENTESTER/nuclei-templates/
